@@ -1,0 +1,12 @@
+pkg_origin=simfish85
+pkg_name=dafneonline-rails
+pkg_version=0.1.0
+pkg_maintainer="Simon Fisher <simfish85@googlemail.com>"
+pkg_license=()
+pkg_source=http://example.com/${pkg_name}-${pkg_version}.tar.xz
+pkg_shasum=sha256sum
+pkg_deps=()
+pkg_build_deps=()
+pkg_bin_dirs=(bin)
+pkg_include_dirs=(include)
+pkg_lib_dirs=(lib)
