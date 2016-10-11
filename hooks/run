@@ -9,4 +9,5 @@ export RAILS_ENV="production"
 cd $DAFNE_ONLINE_DATA/dist
 
 exec 2>&1
-exec chpst -u hab unicorn -p {{cfg.rails_port}}
+#exec chpst -u hab unicorn -p {{cfg.rails_port}}
+exec unicorn -p {{cfg.rails_port}}
