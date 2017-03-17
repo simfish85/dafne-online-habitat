@@ -14,7 +14,7 @@ database_password = ""
 # leader of that service group. If you do not use binding, this app
 # will fall back to using the database host specified here (localhost).
 # We recommend that this only be used for testing purposes.
-database_host = "localhist"
+database_host = "localhost"
 
 # It's highly unlikely anyone would want to change this from the
 # default, right? but it's configurable. Just in case.
