@@ -5,8 +5,6 @@ pkg_maintainer="Simon Fisher <simfish85@googlemail.com>"
 pkg_license=()
 pkg_source=https://s3-eu-west-1.amazonaws.com/emea-techcft/dafne-online-0.1.0.zip
 pkg_shasum=b15c7ddf3b926530eba495ff825a35230fcea2e3077459c934fb61b3ee8b1ade
-pkg_deps=()
-pkg_build_deps=()
 pkg_bin_dirs=(bin)
 pkg_include_dirs=(include)
 pkg_lib_dirs=(lib)
@@ -32,6 +30,10 @@ pkg_build_deps=(
 pkg_lib_dirs=(lib)
 pkg_include_dirs=(include)
 pkg_expose=(3000)
+
+pkg_binds=(
+   [database]="port"
+ )
 
 # The configure scripts for some RubyGems that build native extensions
 # use `/usr/bin` paths for commands. This is not going to work in a
